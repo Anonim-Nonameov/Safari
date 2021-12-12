@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #1F1E1E;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  /*
+  ВНИМАНИЕ: на фоне хедера есть линии! дизайнер дал криво-вырезанную пикчу.
+  TODO: вырезать пикчу правильно, с width & height играться не надо.
+  */
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.header__inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 16px 0 49px;
+}
+
+.menu {
+  width: 100%;
+}
+
+/* Хедеру выдан шрифт заранее, позже вынесу в "общее семейство" header'а. */
+
+.header__title {
+  font-family: 'PT Serif', serif;
+}
