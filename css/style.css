@@ -44,17 +44,69 @@ a {
 .header__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
   padding: 16px 0 49px;
+}
+
+.header__phone {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #fff;
+}
+
+.header__phone-number {
+  font-weight: 400;
+  background-color: #886239;
+  border-radius: 22px;
+  padding: 12px 31px 13px;
+  margin-left: 19px;
 }
 
 .menu {
   width: 100%;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 27px 0 24px;
+  margin-top: 15px;
 }
 
-/* Хедеру выдан шрифт заранее, позже вынесу в "общее семейство" header'а. */
+.menu__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+}
 
 .header__title {
   font-family: 'PT Serif', serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.header__descr {
+  max-width: 420px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header__btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background-color: #886239;
+  border-radius: 30px;
+  padding: 18px 55px 20px;
+  margin-bottom: 20px;
+}
+
+.header__arrow {
+  text-align: center;
+  margin-bottom: 15px;
 }
