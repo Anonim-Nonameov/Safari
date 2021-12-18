@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 10px;
@@ -24,14 +31,10 @@ a {
 }
 
 .header {
-  /*
-  ВНИМАНИЕ: на фоне хедера есть линии! дизайнер дал криво-вырезанную пикчу.
-  TODO: вырезать пикчу правильно, с width & height играться не надо.
-  */
   background-image: url(../images/header-bg.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover;
+  background-position: top center;
 }
 
 .header__inner {
@@ -130,4 +133,33 @@ a {
   border: 1px solid #D9D9DE;
   border-top: none;
   padding: 10px 19px 14px;
+}
+
+.travel-info {
+  background-image: url(../images/travel-info-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 30px 0 50px;
+}
+
+.travel-info__title {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.travel-info__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 54px 67px;
+}
+
+.travel-info__img {
+  margin-bottom: 15px;
+}
+
+.travel-info__text {
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
 }
