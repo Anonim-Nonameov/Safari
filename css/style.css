@@ -253,3 +253,52 @@ a {
   color: #C4C4C4;
   text-decoration: underline;
 }
+
+.about__popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.gallery {
+  color: #fff;
+  background-color: #886239;
+  padding: 50px 0 105px;
+}
+
+.gallery__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 160px;
+  margin-bottom: 40px;
+}
+
+.gallery__link {
+  font-size: 17px;
+  line-height: 19px;
+  text-decoration: underline;
+}
+
+.gallery__item-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+
+.slick-btn {
+  position: absolute;
+  top: -85px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  right: 60px;
+}
