@@ -457,7 +457,7 @@ a {
   justify-content: space-between;
   font-size: 14px;
   line-height: 130%;
-  color: #fff;
+  color: rgba(255, 255, 255, .8);
   margin: 0 auto;
 }
 
@@ -466,29 +466,91 @@ a {
 }
 .footer__box-title {
   font-weight: 500;
+  color: #fff;
   margin-bottom: 7px;
 }
 .footer__copy {
-  opacity: 0.8;
   margin-bottom: 3px;
+  
 }
 .footer__link {
   text-decoration: underline;
-  opacity: 0.8;
+  
 }
 .footer__address {
   width: 165px;
 }
-.footer__address-text {
-  opacity: 0.8;
-}
-.footer__contacts {
-  width: 210px;
-}
-.footer__phone {
-  opacity: 0.8;
-}
+
 .footer__mail {
   display: block;
-  opacity: 0.8;
+}
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .header__phone span {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__title {
+    font-size: 50px;
+  }
+
+  .menu__btn {
+    display: inline-block;
+    position: absolute;
+    top: 107px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .menu__btn::before,
+  .menu__btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__btn::before {
+    top: 0;
+  }
+
+  .menu__btn::after {
+    bottom: 0;
+  }
+  
+  .menu__btn span {
+    display: block;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu__list {
+    transform: translateY(-1000%)
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .header__phone-number {
+    margin-left: 0;
+  }
+
+  .menu {
+    border: none;
+  }
 }
