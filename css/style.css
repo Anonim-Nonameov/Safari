@@ -489,9 +489,25 @@ a {
   display: none;
 }
 
+@media (max-width: 1140px) {
+  .direction__inner {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .direction__img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 800px) {
   .header__phone span {
     display: none;
+  }
+
+  .travel-info__items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
   }
 }
 
@@ -570,5 +586,33 @@ a {
 
   .header__title {
     font-size: 50px;
+  }
+
+  .direction__inner {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .direction {
+    padding: 50px 0;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+
+  .travel-info__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .travel-info__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .direction__inner {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
