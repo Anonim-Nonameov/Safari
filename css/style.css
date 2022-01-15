@@ -498,6 +498,35 @@ a {
   .direction__img {
     width: 100%;
   }
+
+  .about__inner {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery__item-img {
+    width: 100%;  
+  }
+}
+
+@media (max-width: 990px) {
+  .popular__link {
+    min-height: 200px;
+  }
+  
+  .popular__items {
+    grid-gap: 10px;
+  }
+
+  .tour__info {
+    grid-template-columns: repeat(3, 1fr );
+    grid-gap: 30px 15px;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -508,6 +537,65 @@ a {
   .travel-info__items {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
+  }
+
+  .popular {
+    padding: 50px 0;
+  }
+
+  .popular__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular__link {
+    min-height: 320px;
+  }
+
+  .popular__link:nth-child(3),
+  .popular__link:nth-child(6) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .map {
+    padding-bottom: 50px;
+  }
+
+  .map__iframe {
+    height: 400px;
+  }
+
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .about__popup {
+    min-height: 400px;
+  }
+
+  .gallery {
+    padding-bottom: 50px;
+  }
+
+  .tour {
+    padding: 50px 0;
+  }
+
+  .tour__title {
+    margin-bottom: 40px;
+  }
+
+  .tour__box {
+    column-count: 1;
+  }
+
+  .tour__info {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -605,6 +693,23 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+
+  .popular__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery__top {
+    flex-wrap: wrap;
+  }
+
+  .gallery__title {
+    width: 100%;
+    text-align: left;
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 460px) {
@@ -614,5 +719,15 @@ a {
   
   .direction__inner {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tour__info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 340px) {
+  .about__popup {
+    min-height: 260px;
   }
 }
