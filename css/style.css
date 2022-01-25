@@ -597,6 +597,41 @@ a {
   .tour__info {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .booking {
+    padding: 50px 0;
+  }
+
+  .booking__input {
+    width: 100%;
+  }
+  .booking__label {
+    width: 100%;
+    margin-top: -192px;
+    margin-left: 50px;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+   .footer__box {
+     display: block;
+     text-align: center;
+   }
+
+   .footer__info,
+   .footer__address {
+     margin: 0 auto 25px;
+   }
+
+   .footer__contacts {
+     margin: 0 auto;
+   }
 }
 
 @media (max-width: 560px) {
@@ -713,14 +748,8 @@ a {
 }
 
 @media (max-width: 460px) {
-  .travel-info__items {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  
-  .direction__inner {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
+  .travel-info__items,
+  .direction__inner,
   .tour__info {
     grid-template-columns: repeat(1, 1fr);
   }
